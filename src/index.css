@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width: 100%;
+    margin: 0px;
+}
+#root{
+    height: 100%;
+    width: 100%;
+}
+.Card{
+    float: left;
+    height: 200px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    transition: box-shadow 0.5s;
+}
+.Card:hover{
+    box-shadow: 0px 20px 20px;
+    cursor: pointer;
+}
+.CardView{
+    overflow: auto;
+    background-color: lightgray;
+}
+.Card img{
+    height: 100px;
+    width: 100%;
+
+}
+.PageNav{
+    text-align: center;
+    background-color: aqua;
+    font-size: 20px;
+    clear: both;
+}
+.PageNav span{
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: azure;
+}
+.closeMarker{
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+}
+.closeMarkerHolder{
+    overflow: auto;
+}
+.closeMarkerHolder::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.TableHolder{
+    text-align: -webkit-center;
+    margin: 10%;
+    color: darkred;
+    font-size: 32px;
+}
+.Model{
+    overflow: auto;
+}
+.Error{
+    color: red;
+    background-color: blue;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
